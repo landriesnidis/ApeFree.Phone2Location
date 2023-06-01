@@ -6,7 +6,7 @@
 
 以查询中国大陆的手机号码归属地信息为例：
 
-在NuGet页面中勾选`预发行版本`并搜索 **ApeFree.Phone2Location.CN** 。
+在NuGet页面中勾选`预发行版本`并搜索 **ApeFree.Phone2Location.CN** ,点击安装。
 
 查询手机号码归属地的源码如下：
 ```csharp
