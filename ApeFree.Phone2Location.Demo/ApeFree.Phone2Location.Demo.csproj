@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ApeFree.Phone2Location, Version=0.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ApeFree.Phone2Location.0.0.3-beta0602\lib\net45\ApeFree.Phone2Location.dll</HintPath>
+    </Reference>
+    <Reference Include="ApeFree.Phone2Location.CN, Version=0.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ApeFree.Phone2Location.CN.0.0.3-beta0602\lib\net45\ApeFree.Phone2Location.CN.dll</HintPath>
+    </Reference>
     <Reference Include="STTech.CodePlus, Version=1.6.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\STTech.CodePlus.1.6.1-alpha0601\lib\net45\STTech.CodePlus.dll</HintPath>
     </Reference>
@@ -82,16 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ApeFree.Phone2Location.CN\ApeFree.Phone2Location.CN.csproj">
-      <Project>{E830F4DA-E005-4EF6-8B00-AE025C71C44D}</Project>
-      <Name>ApeFree.Phone2Location.CN</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ApeFree.Phone2Location\ApeFree.Phone2Location.csproj">
-      <Project>{47612419-dc41-4b47-a51d-e7ee74dbabd5}</Project>
-      <Name>ApeFree.Phone2Location</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
