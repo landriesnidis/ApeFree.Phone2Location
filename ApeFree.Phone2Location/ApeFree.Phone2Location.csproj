@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+
+		<Company>ApeFree</Company>
+		<Authors>Guijie Lee</Authors>
+		<Copyright>Copyright © 2023 ApeFree, All Rights Reserved.</Copyright>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Title>Phone2Location</Title>
+		<Product>ApeFree.Phone2Location</Product>
+		<Description>ApeFree.Phone2Location是通过手机号码查询归属地信息的标准库，其中并不包含数据，不可单独执行。</Description>
+		<RepositoryUrl>https://github.com/ApeFree/ApeFree.ApeDialogs</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/ApeFree/ApeFree.ApeDialogs/blob/main/README.md</PackageProjectUrl>
+		<Version>0.0.3-beta0602</Version>
+		<PackageIcon>ApeFree_64px.png</PackageIcon>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\ApeFree_64px.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	
+</Project>
