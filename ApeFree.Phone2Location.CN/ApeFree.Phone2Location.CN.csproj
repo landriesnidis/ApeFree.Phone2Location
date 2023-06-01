@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+	  <LangVersion>latest</LangVersion>
+
+	  <Company>ApeFree</Company>
+	  <Authors>Guijie Lee</Authors>
+	  <Copyright>Copyright © 2023 ApeFree, All Rights Reserved.</Copyright>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Title>Phone2Location.CN</Title>
+	  <Product>ApeFree.Phone2Location.CN</Product>
+	  <Description>ApeFree.Phone2Location.CN中已打包中国大陆的电信运营商号段信息，支持省份、城市、邮编、长途区号等信息的查询。数据来源：https://github.com/ls0f/phone/blob/master/phone/phone.dat</Description>
+	  <RepositoryUrl>https://github.com/ApeFree/ApeFree.ApeDialogs</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/ApeFree/ApeFree.ApeDialogs/blob/main/README.md</PackageProjectUrl>
+	  <Version>0.0.3-beta0602</Version>
+	  <PackageIcon>ApeFree_64px.png</PackageIcon>
+	  <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\ApeFree_64px.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="STTech.CodePlus" Version="1.6.1-alpha0601" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApeFree.Phone2Location\ApeFree.Phone2Location.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
