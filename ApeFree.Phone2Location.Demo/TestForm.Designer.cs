@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.btnTest = new System.Windows.Forms.Button();
+            this.btnReleaseTime = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             this.groupBox1.Controls.Add(this.labResult);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(719, 311);
+            this.groupBox1.Size = new System.Drawing.Size(760, 423);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "查询结果";
@@ -56,7 +57,7 @@
             this.labResult.Location = new System.Drawing.Point(3, 17);
             this.labResult.Name = "labResult";
             this.labResult.Padding = new System.Windows.Forms.Padding(20);
-            this.labResult.Size = new System.Drawing.Size(713, 291);
+            this.labResult.Size = new System.Drawing.Size(754, 403);
             this.labResult.TabIndex = 0;
             this.labResult.Text = "查询结果";
             this.labResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,7 +67,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 15F);
-            this.label2.Location = new System.Drawing.Point(12, 356);
+            this.label2.Location = new System.Drawing.Point(12, 468);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 20);
             this.label2.TabIndex = 1;
@@ -77,16 +78,16 @@
             this.tbPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPhone.Font = new System.Drawing.Font("宋体", 15F);
-            this.tbPhone.Location = new System.Drawing.Point(187, 352);
+            this.tbPhone.Location = new System.Drawing.Point(187, 464);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(544, 30);
+            this.tbPhone.Size = new System.Drawing.Size(585, 30);
             this.tbPhone.TabIndex = 2;
             this.tbPhone.TextChanged += new System.EventHandler(this.tbPhone_TextChanged);
             // 
             // btnTest
             // 
             this.btnTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTest.Location = new System.Drawing.Point(571, 397);
+            this.btnTest.Location = new System.Drawing.Point(612, 509);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(160, 40);
             this.btnTest.TabIndex = 3;
@@ -94,17 +95,30 @@
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
+            // btnReleaseTime
+            // 
+            this.btnReleaseTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReleaseTime.Location = new System.Drawing.Point(446, 509);
+            this.btnReleaseTime.Name = "btnReleaseTime";
+            this.btnReleaseTime.Size = new System.Drawing.Size(160, 40);
+            this.btnReleaseTime.TabIndex = 4;
+            this.btnReleaseTime.Text = "数据库发布时间";
+            this.btnReleaseTime.UseVisualStyleBackColor = true;
+            this.btnReleaseTime.Click += new System.EventHandler(this.btnReleaseTime_Click);
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 449);
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btnReleaseTime);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "TestForm";
-            this.Text = "TestForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "号码归属地数据库测试工具";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,6 +132,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.Button btnReleaseTime;
     }
 }
 
