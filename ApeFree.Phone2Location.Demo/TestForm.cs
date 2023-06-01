@@ -67,5 +67,10 @@ namespace ApeFree.Phone2Location.Demo
 
             MessageBox.Show($"调用 {TotalCycles} 次。\r\n总耗时 {sw.ElapsedMilliseconds} ms", "测试结束");
         }
+
+        private void btnReleaseTime_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"数据发布时间：{db.ReleaseTime}", "发布时间");
+        }
     }
 }
